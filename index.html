@@ -11,7 +11,7 @@
 
             <div class="content">
                 <div class="left">
-                    <img src="pc/cha.png" alt="">
+                    <!-- <img src="pc/cha.png" alt=""> -->
                 </div>
                 <div class="right">
                     <div class="box">
@@ -79,12 +79,33 @@
             .mob_wrap {
                 display: none;
             }
-            @media (max-width: 768px) {
+            
+            @media (max-width: 1500px) and (min-width: 1200px) {
+
+                .left img {
+                    height: calc(100vh - 280px) !important
+                }
+                .right .box {
+                    background-position-y: center !important;
+                }
+                .right .title:first-child {
+                    margin-top: 30px !important;
+                }
+                .right .title {
+                    font-size: 48px !important;
+                }
+
+            }
+            @media (max-width: 1200px) {
                 .pc_wrap {
                     display: none;
                 }
                 .mob_wrap {
                     display: block;
+                }
+                .wrap {
+                    background-image: url('mb/bg.png') !important;
+
                 }
             }
             .left img {
@@ -97,7 +118,7 @@
                 width: 50%;
             }
             .wrap {
-                background-image: url('pc/bg.png');
+                background-image: url('pc/pc bg.png');
                 background-repeat : no-repeat;
                 background-size: cover;
             }
@@ -171,6 +192,51 @@
             .right img {
                 cursor: pointer;
             }
+
+
+
+            @media (min-width: 2200px) {
+                .right .title {
+                    font-size: 80px;
+                }
+                .right .content {
+                    font-size: 32px;
+                }
+                .input_box {
+                    font-size: 30px;
+                    padding: 19px;
+                }
+                .right .box {
+                    gap: 10px;
+                }
+            }
+
+
+            @media (min-width: 3000px) {
+                .right .title:first-child {
+                    margin-top: 30px;
+                }
+                .right .title {
+                    font-size: 100px;
+                }
+                .right .content {
+                    font-size: 37px;
+                }
+                .input_box {
+                    font-size: 38px;
+                    padding: 28px;
+                }
+                .right .box {
+                    gap: 15px;
+                }
+                .right img {
+                    width: 40%;
+                    height: auto;
+                }
+            }
+
+
+
 
             .mob_wrap {
                 flex-direction: column;
