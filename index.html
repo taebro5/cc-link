@@ -1,0 +1,232 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <title>CC CASINO</title>
+    </head>
+    <body>
+        <div class="wrap pc_wrap">
+            <div class="head">
+                <img src="pc/logo.png" alt="">
+            </div>
+
+            <div class="content">
+                <div class="left">
+                    <img src="pc/cha.png" alt="">
+                </div>
+                <div class="right">
+                    <div class="box">
+                        <p class="title">CC 카지노</p>
+                        <p class="title">평생 도메인 안내</p>
+                        <p class="content">Korea the Premium Casino CC</p>
+    
+                        <input class="input_box" type="text" value="ccc-02.com" readonly onclick="window.open('https://ccc-02.com', '_blank')">
+                        <input class="input_box" type="text" value="ccc-03.com" readonly onclick="window.open('https://ccc-03.com', '_blank')">
+                        <input class="input_box" type="text" value="ccc-04.com" readonly onclick="window.open('https://ccc-04.com', '_blank')">
+    
+                        <img src="pc/telegram.png" alt="" onclick="window.open('https://t.me/CCCA119', '_blank')">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="wrap mob_wrap">
+
+            <div class="mob_content">
+                <img src="mb/mb cc logo.png" alt="">
+                <p class="title1">CC 카지노</p>
+                <p class="title2">평생 도메인 안내</p>
+                <p class="content">Korea the Premium Casino CC</p>
+                <div class="box">
+                    
+                    <input class="input_box" type="text" value="ccc-02.com" readonly onclick="window.open('https://ccc-02.com', '_blank')">
+                    <input class="input_box" type="text" value="ccc-03.com" readonly onclick="window.open('https://ccc-03.com', '_blank')">
+                    <input class="input_box" type="text" value="ccc-04.com" readonly onclick="window.open('https://ccc-04.com', '_blank')">
+
+                </div>
+                <img src="mb/telegram.png" alt="" onclick="window.open('https://t.me/CCCA119', '_blank')">
+            </div>
+
+        </div>
+
+        <style>
+            @font-face {
+                font-family: 'GmarketSans';
+                src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+                font-weight: 500;
+                font-style: normal;
+            }
+
+            @font-face {
+                font-family: 'GmarketSans';
+                src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+                font-weight: 700;
+                font-style: normal;
+            }
+            body {
+                background: #000;
+            }
+
+            html, body, .wrap {
+                margin: 0;
+                padding: 0;
+                font-family: 'GmarketSans', sans-serif;
+                width: 100%;
+            }
+            .pc_wrap {
+                display: block;
+            }
+            .mob_wrap {
+                display: none;
+            }
+            @media (max-width: 768px) {
+                .pc_wrap {
+                    display: none;
+                }
+                .mob_wrap {
+                    display: block;
+                }
+            }
+            .left img {
+                margin-top: 30px;
+                height: calc(100vh - 110px);
+                position: fixed;
+                bottom: 0;
+            }
+            .left, .right {
+                width: 50%;
+            }
+            .wrap {
+                background-image: url('pc/bg.png');
+                background-repeat : no-repeat;
+                background-size: cover;
+            }
+            .head {
+                width: 100%;
+                position: fixed;
+                top: 0;
+                padding: 40px;
+            }
+            .head img {
+                width: 90px;
+                height: auto;
+            }
+
+            .content {
+                display: flex;
+            }
+            .right {
+                padding: 30px;
+                display: flex;
+            }
+            .right .box {
+                padding: 110px 0;
+                background-image: url(pc/box.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                min-height: calc(100vh - 280px);
+                background-position-x: center;
+                min-width: 90%;
+
+            }
+            .right .title {
+                font-size: 58px;
+                margin: 0;
+                line-height: 1.1;
+                font-weight: 700;
+                background: linear-gradient(to bottom, #3e5de4, #001d6e);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+
+            }
+            .right .content {
+                font-size: 20px;
+                font-weight: 400;
+                color: #000;
+                margin: 5px 0 30px;
+            }
+            .input_box {
+                background: linear-gradient(45deg, #2553ad, #192136);
+                border: 1px solid #fff;
+                box-shadow: 0 0 20px #71a7da;
+                border-radius: 8px;
+                padding: 15px;
+                width: 40%;
+                font-size: 23px;
+                color: #fff;
+                margin-bottom: 20px;
+                justify-items: center;
+                font-family: 'GmarketSans', sans-serif;
+                font-weight: 700;
+            }
+            
+            .input_box:hover {
+                box-shadow: 0px 0px 5px #1e40ff, 0px 0px 10px #1e40ff, 0px 0px 15px #1e40ff;
+                transition: all 300ms;
+                cursor: pointer;
+            }    
+            .right img {
+                cursor: pointer;
+            }
+
+            .mob_wrap {
+                flex-direction: column;
+            }
+            .mob_content {
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .mob_content img {
+                width: -webkit-fill-available;
+            }
+            .mob_content .title1 {
+                font-size: 40px;
+                margin: 0;
+                line-height: 1.1;
+                font-weight: 700;
+                background: linear-gradient(to bottom, #6fccf3, #36a0e8);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+
+            }
+            .mob_content .title2 {
+                font-size: 40px;
+                margin: 0;
+                line-height: 1.1;
+                font-weight: 700;
+                color: #fff;
+            }
+            .mob_content .content {
+                font-size: 16px;
+                color: #fff;
+                margin: 4px 0 20px;
+            }
+            .mob_wrap .box {
+                background-image: url('mb/up.png'), url('mb/down.png');
+                background-repeat: no-repeat, no-repeat;
+                background-position: top center, bottom center;
+                background-size: contain, contain;
+                display: flex;
+                flex-direction: column;
+                padding: 20px;
+            }
+            .mob_wrap .box .input_box {
+                border-radius: 20px;
+                width: 100%;
+                justify-items: center;
+            }
+            .mob_wrap .box .input_box:last-child {
+                margin-bottom: 0;
+            }
+            .mob_wrap .box + img {
+                margin-top: 20px;
+                width: 80%;
+            }
+        </style>
+    </body>
+</html>
